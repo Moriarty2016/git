@@ -65,7 +65,7 @@ Find mimikatz at: http://blog.gentilkiwi.com
 
 http://clymb3r.wordpress.com/2013/04/09/modifying-mimikatz-to-be-loaded-using-invoke-reflectivedllinjection-ps1/
 #>
-
+function Invoke-Mimikatz{
 [CmdletBinding(DefaultParameterSetName="DumpCreds")]
 Param(
 	[Parameter(Position = 0)]
@@ -2744,5 +2744,5 @@ Function Main
 }
 
 Main
-
-
+}
+Invoke-Mimikatz -Command 'log hello!'
